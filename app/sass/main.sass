@@ -1,0 +1,351 @@
+@import "vars"
+
+body, html
+	font-size: 16px
+	min-width: 320px
+	height: 100%
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+
+.wrapper
+	width: 589px
+	margin: 0 auto
+	position: relative
+.header
+	background-image: url(../img/bg.jpg)
+	background-position: center
+	background-repeat: no-repeat
+	background-size: cover
+	height: 100%
+	position: relative
+	z-index: 0
+	max-width: 100%
+	&:after 
+			content: '\A'
+			position: absolute
+			width: 100% 
+			height: 100%
+			top: 0 
+			left: 0
+			background-color: rgba(0,0,0,0.5)
+			opacity: 1
+			z-index: -1
+
+			
+
+.logo
+	display: block
+	padding: 60px 0 47px
+	margin: 0 auto
+.header-menu
+	text-align: center
+	display: flex
+	justify-content: center
+	a 
+		font-size: 13px
+		text-decoration: none
+		color: #fff
+		text-transform: uppercase
+		display: inline-block
+		padding: 0 20px 0 20px
+		font-weight: 700
+		letter-spacing: 1.5px
+		&:hover 
+			color: darken(#fff, 50%)
+.header-text
+	text-transform: uppercase
+	color: #fff
+	text-align: center
+	&__head
+		font-family: 'Ubuntu', sans-serif
+		font-size: 53px
+		margin-bottom: 43px
+	&__subtitle
+		font-weight: 700
+		font-size: 15px
+		margin-bottom: 101px
+
+.button
+	border-radius: 25px
+	padding: 18px 50px
+	font-size: 15px
+	font-weight: 700
+	color: #fff
+	background-color: #50C3AF
+	border: none
+	display: block
+	margin: 0 auto
+	transition: all .5s ease
+	cursor: pointer
+	&:hover
+		background-color: darken(#50C3AF, 20%)
+		border: 1px solid #50C3AF 
+
+.humans
+	background-color: #eaeaeb;
+	padding: 52px 0 68px
+	&-cards
+		display: flex
+		justify-content: space-between
+		&-block
+			text-align: center
+			width: 200px
+			&-img
+				height: 42px
+			&-text
+				&__title
+					color: #384048
+					padding-bottom: 21px
+					border-bottom: 1px solid #E2E3E4
+					text-transform: uppercase
+					width: 135px
+					text-align: center
+					display: block 
+					margin: 32px auto 25px 
+				&__desc
+					font-size: 14px
+.template
+	background-color: #F5F5F5
+	padding: 65px 0 67px
+	.button 
+		padding: 7px 15px
+		font-size: 14px
+		font-weight: normal
+		color: #fff
+		background-color: #50C3AF
+		border: none
+		margin: 0
+		font-family: 'PT Sans', sans-serif
+		&:hover
+			background-color: darken(#50C3AF, 20%)
+			border: 1px solid #50C3AF 
+	&-cards
+		display: flex
+		justify-content: space-between
+		&-block
+			width: 264px
+			&-text
+				&__title
+					color: #384048
+					font-size: 18px
+					padding-bottom: 21px
+					border-bottom: 1px solid #E2E3E4
+					margin-bottom: 31px
+					text-transform: uppercase
+				&__desc
+					font-size: 14px
+					margin-bottom: 34px
+.button-gray
+	padding: 7px 15px
+	font-size: 14px
+	font-weight: normal
+	color: #f5f5f5
+	background-color: #d2d5da
+	border: none
+	margin: 0
+	font-family: 'PT Sans', sans-serif
+	&:hover
+		background-color: darken(#d2d5da, 20%)
+		border: 1px solid #d2d5da
+.support
+	background-color: #eaeaeb
+	padding: 63px 0 64px
+	&-head 
+		display: flex
+		height: 24px
+		align-items: center
+		padding-bottom: 21px
+		border-bottom: 1px solid #E2E3E4
+		margin-bottom: 26px
+		&__title
+			margin: 0
+			font-size: 18px
+			text-transform: uppercase
+			margin-left: 15px
+			color: #384048
+	&-desc
+		font-size: 14px
+		margin-bottom: 38px
+
+.check
+	padding: 58px 0 70px
+	background-color: #f5f5f5
+	&-cards
+		display: flex
+		justify-content: space-between
+		&-block 
+			width: 181px
+			a 
+				color: #50c3af
+				text-decoration: none
+				transition: all .25s ease
+				&:hover
+					color: darken(#50c3af, 20%)
+			&-text
+				&__title
+					font-size: 16px
+					color: #384048
+					padding-bottom: 21px
+					border-bottom: 1px solid #E2E3E4
+					text-transform: uppercase
+					margin-bottom: 26px
+				&__desc
+					font-size: 14px
+					margin-bottom: 28px
+.write
+	background-color: #eaeaeb
+	padding: 61px 0 63px
+	.button 
+		padding: 7px 15px
+		font-size: 14px
+		font-weight: normal
+		color: #fff
+		background-color: #50C3AF
+		border: none
+		margin: 0
+		font-family: 'PT Sans', sans-serif
+		&:hover
+			background-color: darken(#50C3AF, 20%)
+			border: 1px solid #50C3AF 
+	&-cards
+		display: flex
+		justify-content: space-between
+		&-block 
+			width: 251px
+			&-head
+				display: flex
+				height: 20px
+				align-items: center
+				margin-bottom: 28px
+				padding-bottom: 21px
+				border-bottom: 1px solid #E2E3E4
+				&__title
+					font-size: 18px
+					color: #384948
+					margin: 0 0 0 14px
+			&-desc
+				font-size: 14px
+				margin-bottom: 36px
+.themeforest
+	padding: 61px 0 62px
+	background-color: #f5f5f5
+	&-blocks
+		display: flex
+		justify-content: space-between
+		&-right 
+			width: 286px
+			&__title
+				margin: 0 0 27px
+				font-size: 18px
+				color: #293139
+				padding-bottom: 23px
+				border-bottom: 1px solid #E2E3E4
+			&__desc 
+				font-size: 14px
+				margin-bottom: 23px
+.clients
+	padding: 49px 0 68px
+	background-color: #50c3af
+	&-head
+		display: flex
+		padding-bottom: 22px
+		border-bottom: 0.5px solid #f5f5f5
+		align-items: center
+		height: 16px
+		width: 260px
+		margin: 0 auto
+		margin-bottom: 39px
+		&__title
+			margin: 0 0 0 8px
+			font-size: 15px
+			color: #fff
+			text-transform: uppercase
+	&-imgs
+		display: flex
+		justify-content: space-between
+		height: 26px
+		align-items: center
+		
+.footer
+	padding: 21px 0 21px
+	background-color: #f5f5f5
+	&-flex
+		display: flex
+		justify-content: space-between
+		&-copy
+			color: #aaacaf
+			font-size: 13px
+			span
+				color: #767b80
+		&-socials
+			display: flex
+			align-items: center
+			width: 77px
+			justify-content: space-between
+			img 
+				cursor: pointer
+				&:hover
+					opacity: .7
+
+
+
+
+
+
+			
+
+
+
+
+
+
+		
+
+
+
+
+			
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+@import "media" // Always at the end
