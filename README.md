@@ -17,6 +17,6 @@ Demo you can see, if you click [here].
  - `gulp` 
 ### Result:
 ![home](https://github.com/scandy5/have-a-good-day/blob/master/app/img/shot-20190103-3173-d76zjg.jpeg)
-![home](https://github.com/scandy5/have-a-good-day/blob/master/app/img/shot-20190103-3173-d76zjg.jpeg)
+
 
 [here]: https://scandy5.github.io/have-a-good-day/app/
